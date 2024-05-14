@@ -1,19 +1,4 @@
-#!/usr/bin/python3
-
-
-
-#  №№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№ Первая функция - рисует меню. Все следующие рисуют и управляют всем, что внутри меню и в глубине их. №№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№
-
-def makemenu(root):
-    top = Menu(root)
-    root.config(menu=top)
-    file = Menu(top, tearoff=False)
-    file.add_command(label="Настройки подписи", command=make_settings_sign)
-    file.add_command(label="Настройки шифрования", command=make_settings_enc)
-    file.add_command(label="Доступные сертификаты", command=make_see_cert)
-    file.add_command(label='Выход', command=root.quit, underline=0)
-    top.add_cascade(label='Настройки', menu=file, underline=0)
-
+#
     service_menu = Menu(top, tearoff=False)
     service_menu.add_command(label="Операции с контейнерами и сертификатами", command=make_service_menu)
     top.add_cascade(label="Сервис криптопровайдера", menu=service_menu, underline=0)
