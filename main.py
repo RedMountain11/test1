@@ -1,12 +1,5 @@
 #!/usr/bin/python3
 
-from tkinter import *
-from tkinter.messagebox import *
-import subprocess
-import os
-import sys
-import random
-import time
 
 
 #  №№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№ Первая функция - рисует меню. Все следующие рисуют и управляют всем, что внутри меню и в глубине их. №№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№
