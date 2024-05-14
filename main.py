@@ -1,12 +1,3 @@
-#
-    service_menu = Menu(top, tearoff=False)
-    service_menu.add_command(label="Операции с контейнерами и сертификатами", command=make_service_menu)
-    top.add_cascade(label="Сервис криптопровайдера", menu=service_menu, underline=0)
-
-    dop = Menu(top, tearoff=False)
-    dop.add_command(label="Случайная мудрость", command=make_wisdom)
-    top.add_cascade(label="Дополнительно", menu=dop, underline=0)
-    # make wisdom  в самом конце, чтобы не мeшaла.
 
 
 def make_settings_sign():
